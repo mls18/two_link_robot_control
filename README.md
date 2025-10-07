@@ -38,18 +38,44 @@ cd two_link_robot_control
 This project implements computed torque control (feedback linearization) for a two-link planar robot:
 Robot Dynamics:
 
-M(θ)θ̈ = τ - C(θ,θ̇)θ̇ - G(θ)
+Consider a two-link planar robot arm with:
+- Link lengths: $L_1$, $L_2$ (m)
+- Link masses: $M_1$, $M_2$ (kg)
+- Joint angles: $\theta_1$, $\theta_2$ (rad)
 
-Control Law:
+### Equations of Motion
+
+Using the Lagrangian approach, the dynamics are:
+$M(\theta)\ddot{\theta} + C(\theta,\dot{\theta})\dot{\theta}+G(\theta)=\tau$
+
+Where:
+- **$M(\theta)$**: Configuration-dependent mass/inertia matrix (2×2)
+- **$C(\theta,\dot{\theta})$**: Coriolis and centrifugal terms (2×2)
+- **$G(\theta)$**: Gravity vector (2×1)
+- **$\tau$**: Applied joint torques (2×1)
 
 
-τ = M(θ)[θ̈_ref + u] + C(θ,θ̇)θ̇ + G(θ)
+### Feedback Linearization
 
-Linearized System:
 
-θ̈ = θ̈_ref + u
+Transform the nonlinear system into a linear one through control design.
 
-Where u can be any stabilizing controller (PD, LQR, game theory, etc.) See [theory.md] for complete derivation.
+### Control Law
+$\tau = M(\theta)(\ddot{\theta}_{\rm ref}+u) + C(\theta,\dot{\theta})+G(\theta)$
+
+### Result
+
+Substituting into dynamics:
+$\ddot{\theta} = \ddot{\theta}_{\rm ref} + u $
+
+**Linear dynamics!** Now design $u$ using any linear control method.
+
+## Trajectory Tracking
+
+### Tracking Error
+$e = \theta - \theta_{\rm ref}$
+$\dot{e} = \dot{\theta} - \dot{\theta}_{\rm ref}$
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
