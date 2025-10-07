@@ -66,4 +66,10 @@ CAD Model: [[CAD model](https://grabcad.com/library/two-link-robot-1)]
 - Slotine, J. J. E., & Li, W. (1991). Applied Nonlinear Control. Prentice Hall.
 
 
-## Contact
+## Author
+
+Maria Luisa Scarpa
+PhD in Control Theory (Dynamical Systems, Optimal Control, Game Theory)
+Background: Aeronautical Engineering
+LinkedIn: [My profile](https://www.linkedin.com/in/maria-luisa-scarpa-2000/)
+Email: [scarpa.mari@gmail.com/ mls18@ic.ac.uk]
