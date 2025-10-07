@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="10/03/25||11:26:29" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.4.1"/>
+<ModelUnits mass="kilogram" length="inch"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="TWO_link_ROBOTiC_ARM_ASEEMBLY" uid="TWO_link_ROBOTiC_ARM_ASEEMBLY" version="120">
+<AssemblyFile name="TWO_link_ROBOTiC_ARM_ASEEMBLY.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Part_2_Arm__2-1" uid="Part_2_Arm__2-1" entityUid="Part_2_Arm__2*:*Varsayilan">
+<Transform>
+<Rotation>-0.2656047662757991 0.86904452368013674 0.41739157154061307 -0.95633207622582839 -0.29228232923253578 -1.9480944635219544e-15 0.12199618073191734 -0.39916494821059645 0.9087267334060648</Rotation>
+<Translation>-0.18456499180143238 0.13815748924850851 0.25666332827884047</Translation>
+</Transform>
+</Instance>
+<Instance name="Part_1_Arm__1-1" uid="Part_1_Arm__1-1" entityUid="Part_1_Arm__1*:*Varsayilan">
+<Transform>
+<Rotation>-0.64661671827744949 -0.63849126513285726 0.41739157154061551 0.70262185722178816 -0.71156343761762042 -1.713039432527097e-16 0.29700058147806147 0.29326844118458828 0.9087267334060638</Rotation>
+<Translation>-0.11328703918751545 0.1597228578638521 0.20741770248989957</Translation>
+</Transform>
+</Instance>
+<Instance name="Part_0_Link__0-1" uid="Part_0_Link__0-1" grounded="true" entityUid="Part_0_Link__0*:*Varsayilan">
+<Transform>
+<Rotation>-0.90872673340606425 0 -0.41739157154061446 0 0.99999999999999989 0 0.41739157154061457 0 -0.90872673340606414</Rotation>
+<Translation>-0.063542012778188606 0 0.17081356889668814</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Çakisik3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part_0_Link__0-1</Uid>
+</InstancePath>
+<Position>0.1946183915816771 0.08780649114647418 -0.0049999999999999767</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part_1_Arm__1-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0074999999999999789</Position>
+<Axis>-1.1102230246251565e-16 -2.7755575615628914e-16 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Çakisik4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part_1_Arm__1-1</Uid>
+</InstancePath>
+<Position>0 0 0.0075000000000000067</Position>
+<Axis>1.1102230246251565e-16 2.7755575615628914e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part_2_Arm__2-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0075000000000000067</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Es Merkezli3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part_1_Arm__1-1</Uid>
+</InstancePath>
+<Position>0.08500000000000002 -2.1510571102112408e-16 -0.0024999999999999745</Position>
+<Axis>1.1102230246251565e-16 2.7755575615628914e-16 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part_2_Arm__2-1</Uid>
+</InstancePath>
+<Position>-0.084999999999999964 -2.2204460492503131e-16 -0.017500000000000016</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Es Merkezli4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part_0_Link__0-1</Uid>
+</InstancePath>
+<Position>0 0.099999999999999978 0.0050000000000000183</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part_1_Arm__1-1</Uid>
+</InstancePath>
+<Position>-0.084999999999999937 -2.6367796834847468e-16 -0.017500000000000002</Position>
+<Axis>1.1102230246251565e-16 2.7755575615628914e-16 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Part_0_Link__0" uid="Part_0_Link__0*:*Varsayilan" version="129">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part_0_Link__0.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.39627397393558844</Mass>
+<CenterOfMass>-0.00082358756940462043 0.015673836650852018 2.5577585043775079e-05</CenterOfMass>
+<Inertia>0.00063360162002374884 0.00099321809975753896 0.00064550629948864689 -8.5461250542650426e-07 -8.3461515191130481e-09 1.3082066959948785e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Part_0_Link__0_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Diffuse r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Specular r="0.0039215686274509803" g="0.11960784313725489" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part_1_Arm__1" uid="Part_1_Arm__1*:*Varsayilan" version="122">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part_1_Arm__1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.1146727860355552</Mass>
+<CenterOfMass>-0.01122322767087677 -0.0034279737092665495 0.00031480807603886252</CenterOfMass>
+<Inertia>1.6202536316084847e-05 0.00036752294972958784 0.0003785609904739501 -1.2374991170871599e-07 2.9971324522376381e-06 3.674031677707942e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Part_1_Arm__1_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Diffuse r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Specular r="0.0039215686274509803" g="0.11960784313725489" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part_2_Arm__2" uid="Part_2_Arm__2*:*Varsayilan" version="148">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part_2_Arm__2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.09704921309928316</Mass>
+<CenterOfMass>-0.016942753363894197 -0.0031938398752376792 0.00039220664291218874</CenterOfMass>
+<Inertia>1.1746104580026492e-05 0.00032936139040510665 0.00033478262991665529 -1.2156893586913513e-07 2.5905042129437277e-06 3.298101032508527e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Part_2_Arm__2_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Diffuse r="0.0078431372549019607" g="0.23921568627450979" b="0.82352941176470584" a="1"/>
+<Specular r="0.0039215686274509803" g="0.11960784313725489" b="0.41176470588235292" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
